@@ -9,27 +9,23 @@
 <body>
     <header>
         <h1 class="titulo_principal">NXCross</h1>
-        <h2 class="subtitulo"> Guia de movimentos e tecnicas de CrossTraing</h2>
+        <h2 class="subtitulo"> Guia de CrossTraing</h2>
     </header>
     <main> 
         <section> 
-        <input class="pesquisa" type="search" placeholder="Digite aqui o movimento que deseja conhecer">
-        <button class="botao">Pesquisar</button>
+        <input class="pesquisa" type="search" placeholder="Digite aqui o que busca" id="campo-pesquisa">
+        <button onclick="pesquisar()" class="botao">Pesquisar</button>
         </section>
-        <section> 
-            <h2> Sobre CrossTraing</h2>
-            <p> O CrossTraining é uma modalidade de treino físico que combina diversos exercícios 
-                de diferentes modalidades esportivas, como ginástica, levantamento de peso, corrida, 
-                entre outros. A ideia é trabalhar o corpo de forma completa, desenvolvendo força, resistência, 
-                flexibilidade e coordenação motora. As sessões são dinâmicas e desafiadoras, com alta intensidade e 
-                variação constante nos exercícios, o que evita a rotina e torna os treinos mais divertidos e eficientes. 
-                Além dos benefícios físicos, o CrossTraining também promove o bem-estar mental e a melhora da autoestima.</p>
-                <a href="https://pt.wikipedia.org/wiki/CrossFit" target="_blank"> Clique para saber mais</a>
+        <section class="resultados-pesquisa"
+        id="resultados-pesquisa"> 
             </section>
     </main>
     <footer class="rodape"> 
         <p>2024 - NXCross. Todos os direitos reservados</p>
         <p> Criado por Ingrid Souza</p>
     </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+
 </body>
 </html>

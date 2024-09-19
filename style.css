@@ -18,25 +18,38 @@
 }
 
 body{
-    padding: 10% 10%;
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    height: 100vh; /* Preenche a altura total da viewport */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
     background-image: url('plano_fundo.jpg');
     background-color: #ffffff80;
-    color: aliceblue;
+    color: rgb(250, 250, 250);
     text-align: center;
     background-size: cover;
     background-position: 0px,opx, 100px;
     background-repeat: no-repeat;
-    background-blend-mode:darken;
+   
 
     
+}
+section {
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center ; /* Centraliza os itens horizontalmente */
+    justify-content: space-between;
+    gap: 15px;
+
 }
 
 .pesquisa{
     width: 500px;
     height: 40px;
     border-radius: 40px;
+    border: none;
     padding: 10px;
     background-color: #ffffff80;
     font-size: 14px;
@@ -46,10 +59,18 @@ body{
 }
 
 .botao{
-    border-radius: 50px;
-    background-color: gray;
-    width: 100px;
-    height: 35px;
+    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 1.5rem; /* Borda arredondada */
+    background-color: gray; /* Cor de fundo do botão */
+    color: #F5F7F8; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+.botao:hover {
+    background-color: #31383e; /* Muda a cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
 }
 
 .rodape{
@@ -59,7 +80,37 @@ body{
   width: 100%;
   background-color: gray;
   color: black;
-  padding: 0.5px;
+  padding: 0.2px;
   text-align: center;
   font-size: 12px;
+  
+}
+
+.resultados-pesquisa{
+    width: 60rem; /* Largura máxima da caixa de resultados */
+    height: 46vh; /* Altura máxima da caixa de resultados */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 0.6rem; /* Borda arredondada */
+}
+
+
+
+.item-resultado {
+    background: #adacac; /* Cor de fundo dos itens */
+    opacity: 0.9;
+    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 0.9rem; /* Espaçamento interno */
+    margin-bottom: 0.9rem; /* Espaçamento abaixo dos itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.item-resultado a{
+    color: #31383e;
+    text-decoration: none;
+}
+
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
